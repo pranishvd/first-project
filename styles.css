@@ -1,0 +1,42 @@
+body{
+margin: 0;
+padding: 0;
+font-family: 'Varela Round', sans-serif;
+}
+
+h1{
+  margin-top:50px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.para{
+margin-top: 60px;
+font-style: italic;
+padding: 0 5%;
+font-size: 18px;
+letter-spacing:1px;
+}
+
+.bg-img img{
+  position: relative;
+  height: 771px;
+  width: 100%;
+  z-index: -1;
+}
+
+.inside-box{
+  height: 500px;
+  width:400px;
+  background:#fff;
+  position: absolute;
+  margin: 0 500px;
+  top : 200px;
+  border-radius: 2%;
+  opacity: 0.7;
+}
+.form-in{
+  position: absolute;
+  top:150px;
+}

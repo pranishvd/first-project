@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Varela Round', sans-serif;
+}
+nav{
+  margin: 0;
+}
+
+/* col class */
+.one {
+  height: 200px;
+  width: 300px;
+  margin-left: 100px;
+  padding: 5% 6%;
+}
+
+/* images class */
+.one img {
+  height: 200px;
+  width: 250px;
+  opacity: 0.5;
+  border-radius: 2%;
+}
+
+/* image hover */
+/* .one img:hover {
+  opacity: 1;
+} */
+
+/* container move from top */
+.top-slide {
+  margin-top: 100px;
+}
+
+/* slide-bar */
+.side-bar {
+  background-color: #0f4c75;
+  height: 715px;
+  width: 250px;
+  position: absolute;
+  display: flex;
+  border-style: none solid none none;
+  border-width: thin;
+  color: #fff;
+  border-right-color: #1b262c;
+}
+
+/* slide-bar profile */
+.profile {
+  height: 300px;
+  width: 250px;
+}
+/* slide-bar profile heading and paragraph */
+.profile h2, p {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+/* slide-bar profile images */
+.profile img {
+  border-radius: 50%;
+  /* float: right; */
+  height: 150px;
+  width: 150px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/* slide-bar menu */
+.side-menu {
+  width: 250px;
+  height: 50px;
+  /* background-color: blue; */
+  text-align: center;
+}
+/* slide-bar menu heading */
+.side-menu h4 {
+  padding-top: 2%;
+  /* font-size: 2rem; */
+}
+
+/* menu item 1 */
+.desti {
+  /* border-style: solid none none; */
+  border-width: thin;
+  margin-bottom: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+/* menu item 2 */
+.history {
+  /* border-style: solid none none; */
+  border-width: thin;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+/* menu item 3 */
+.payment {
+  /* border-style: solid none none; */
+  border-width: thin;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* menu item 4 */
+.logout {
+  /* border-style: solid none none; */
+  border-width: thin;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+/* bottom heading */
+.skyline {
+  margin-top: 50px;
+}
+
+/* .history:hover{
+  border-style: solid none none;
+} */
+
+ .tamil{
+  text-align: center;
+  color: grey;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* .one img,.tamil:hover{
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+} */
+
+
+/* Dropdown btns */
+
+.dropbtn {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+.desti {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropbtn:hover {
+  color: blue;
+}
+
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  /* padding-left: 8px; */
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.list{
+  font-size: 20px;
+}
