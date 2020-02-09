@@ -6,44 +6,54 @@ body {
 nav{
   margin: 0;
 }
-
-/* col class */
-.one {
-  height: 200px;
-  width: 300px;
-  margin-left: 100px;
-  padding: 5% 6%;
-}
-
-/* images class */
-.one img {
-  height: 200px;
-  width: 250px;
-  opacity: 0.5;
-  border-radius: 2%;
-}
-
-/* image hover */
-/* .one img:hover {
-  opacity: 1;
-} */
-
 /* container move from top */
-.top-slide {
+/* .top-slide { */
+  /* margin-top: 100px; */
+  /* margin-left: 100px; */
+/* } */
+
+.container {
   margin-top: 100px;
+  margin-left: 300px;
 }
 
 /* slide-bar */
-.side-bar {
+#side-bar {
   background-color: #0f4c75;
   height: 715px;
   width: 250px;
   position: absolute;
   display: flex;
-  border-style: none solid none none;
+  /* border-style: none solid none none; */
   border-width: thin;
   color: #fff;
   border-right-color: #1b262c;
+  left: -300px;
+  -webkit-transition: -webkit-transform 0.5s;
+   transition: transform 0.5s;
+}
+
+#side-bar.active {
+   /* left: 0; */
+   visibility: visible;
+   -webkit-transform: translate3d(300px, 0, 0);
+   transform: translate3d(300px, 0, 0);
+}
+/* togglr-burger */
+.toggle-btn{
+   position :absolute;
+   top:10px;
+   left:310px;
+   cursor: pointer;
+}
+
+.toggle-btn span {
+   width :30px;
+   height: 5px;
+   background: #000;
+   display: block;
+   margin-top: 4px;
+
 }
 
 /* slide-bar profile */
@@ -79,32 +89,6 @@ nav{
   padding-top: 2%;
   /* font-size: 2rem; */
 }
-
-/* menu item 1 */
-.desti {
-  /* border-style: solid none none; */
-  border-width: thin;
-  margin-bottom: 30px;
-  cursor: pointer;
-  margin-top: 20px;
-}
-
-/* menu item 2 */
-.history {
-  /* border-style: solid none none; */
-  border-width: thin;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-/* menu item 3 */
-.payment {
-  /* border-style: solid none none; */
-  border-width: thin;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-/* menu item 4 */
 .logout {
   /* border-style: solid none none; */
   border-width: thin;
@@ -117,29 +101,11 @@ nav{
   margin-top: 50px;
 }
 
-/* .history:hover{
-  border-style: solid none none;
-} */
-
- .tamil{
-  text-align: center;
-  color: grey;
-  font-style: italic;
-  margin-top: 10px;
-}
-
-/* .one img,.tamil:hover{
-  font-style: normal;
-  font-weight: bold;
-  color: black;
-} */
-
-
 /* Dropdown btns */
 
 .dropbtn {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: #fff;
   display: block;
@@ -149,6 +115,7 @@ nav{
   text-align: center;
   cursor: pointer;
   outline: none;
+  padding: 10px 0;
 }
 .desti {
   position: relative;
@@ -173,4 +140,37 @@ nav{
 
 .list{
   font-size: 20px;
+}
+
+
+/* card-view */
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  /* font-family: arial; */
+
+}
+
+.price {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 10px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 80%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
 }

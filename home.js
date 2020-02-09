@@ -10,17 +10,13 @@ for (var i = 0; i < placeimages.length; i++) {
   })
 }
 
+const clickButton=document.querySelectorAll('.toggle-btn')
+const clickSide=document.getElementById('side-bar')
 
-const dropDown = document.querySelectorAll(".dropbtn")
 
-for (i = 0; i < dropDown.length; i++) {
-  dropDown[i].addEventListener("click", function() {
-  this.classList.toggle("active");
-  const dropdownContent = this.nextElementSibling;
-  if (dropdownContent.style.display === "block") {
-  dropdownContent.style.display = "none";
-  } else {
-  dropdownContent.style.display = "block";
-  }
-  });
+for (let i = 0; i < clickButton.length; i++) {
+   clickButton[i].addEventListener('click',function(){
+     clickSide.classList.toggle('active')
+
+   });
 }
